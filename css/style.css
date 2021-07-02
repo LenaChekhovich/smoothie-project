@@ -1,3 +1,59 @@
+@font-face {
+    font-family: 'MuliRegular';
+    src: url(../assets/fonts/Muli-Regular.woff);
+}
+
 .header {
-    background-image: url(./assets/images/header_bg.jpg);
+    background-image: url(../assets/images/header_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: url(../assets/images/header_img.jpg) no-repeat center/cover;
+    }
+    
+.header__nav {
+}
+.header__list {
+}
+.header__item {
+}
+.header__link {
+}
+.logo__link {
+}
+.logo__img {
+}
+.header__right-block {
+}
+.header__personal {
+}
+.personal {
+}
+.personal__item {
+}
+.personal__link {
+}
+.personal__img {
+}
+.personal__counter {
+}
+.header__social-list {
+}
+.social {
+}
+.social__list-item {
+}
+.social__link {
+}
+.social__img {
+}
+.header__content {
+}
+.header__btn {
+}
+.btn {
+}
+.btn--green {
+}
+.header__title {
 }
