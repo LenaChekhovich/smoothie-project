@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+body {
+  color: #fff;
+}
+
 ul{
   list-style: none;
 }
