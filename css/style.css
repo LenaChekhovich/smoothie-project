@@ -99,13 +99,15 @@
 
 .personal__item {
     margin-right: 45px;
+    position: relative;
 }
 
 .personal__link {
     display: flex;
 }
 
-.personal__icon {}
+.personal__icon {
+}
 
 .personal__cart-count {
     background-color: #fff;
@@ -117,6 +119,9 @@
     border-radius: 50%;
     font-size: 10px;
     color: #000000;
+    position: absolute;
+    top: -12px;
+    left: 20px;
 }
 
 .header__socials {}
@@ -181,7 +186,7 @@
 
 .smoothies__title {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 55px;
 }
 
 .title {
@@ -200,6 +205,8 @@
     max-width: 915px;
     line-height: 1.94;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text {
@@ -213,10 +220,15 @@
 
 .smoothies__wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     max-width: 1010px;
+    justify-content: center;
+    align-items: center;
+
+    height: 400px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .smoothies__inner {
@@ -596,6 +608,8 @@ display: flex;
 .footer__logo {
     display: flex;
     align-items: center;
+    /* justify-content: center;
+    flex-basis: 29%*/
 }
 
 .logo {
@@ -608,6 +622,7 @@ display: flex;
 .footer__info {
     display: flex;
     flex-direction: column;
+    /*flex-basis: 14%;*/
 }
 
 .info {
@@ -621,11 +636,11 @@ display: flex;
     }
 
 .info__list {
-    margin-top: 43px;
+    margin-top: 45px;
     font-family: 'MuliBold', sans-serif;
     font-size: 18px;
     line-height: 1.94;
-    letter-spacing: -0.36px;
+    letter-spacing: -0.02em;
     color: #6d450c;
 }
 
@@ -650,15 +665,19 @@ display: flex;
 .payment__list {
     margin-top: 32px;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    max-width: 215px;
+    max-width: 270px;
 }
 
 .payment__item {}
 
 .payment__img {}
 
-.footer__subscription {}
+.footer__subscription {
+    flex-basis: 28%;
+    position: relative;
+}
 
 .subscription {
 }
@@ -672,13 +691,15 @@ display: flex;
 
 .subscription__form {
     margin-top: 35px;
+    position: relative;
 }
 
 .subscription__input {
-    width: 495px;
+    max-width: 495px;
+    width: 100%;
     height: 60px;
     border-radius: 30px;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     border: none;
     font-family: 'MuliBold', sans-serif;
     font-size: 17px;
@@ -686,34 +707,41 @@ display: flex;
     letter-spacing: -0.34px;
     color: #6d450c;
     padding-left: 63px;
+    margin-bottom: 20px;
 }
 
 .subscription__submit {
     font-family: 'MuliExtraBold', sans-serif;
     font-size: 18px;
-    line-height: 2.22;
-    letter-spacing: -0.36px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
     color: #6d450c;
-    
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    left: 90px;
+    bottom: -51px;
 }
 
 .subscription__wrap {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
-.subscription__btn {
+/*.subscription__btn {
     font-family: 'MuliBold', sans-serif;
     font-size: 18px;
     line-height: 2.22;
     letter-spacing: -0.36px;
     color: #6d450c;
     margin-top: 27px;
-}
+}*/
 
 .subscription__social {
-    margin-left: 43px;
-    margin-top: 27px;
+    /*margin-left: 43px;
+    margin-top: 27px;*/
+    position: absolute;
 }
 
 .social {
