@@ -457,6 +457,11 @@ display: flex;
 }
 
 .story__btn {
+    font-family: 'MuliExtraBold', sans-serif;
+    font-size: 21px;
+    line-height: 1.05;
+    letter-spacing: normal;
+    text-align: left;
     margin-top: 60px;
     width: 301px;
     height: 60px;
@@ -466,12 +471,26 @@ display: flex;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+    background-image: url(../assets/images/header/arrow.png.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 234px;
+    background-position-y: 23px;
 }
 
-.story__right-block {}
+.story__right-block {
+    position: relative;
+}
 
-.story__img {}
+.story__img {
+}
 
+.story__right-block::before {
+    content: url(../assets/images/story/stamp.png);
+    position: absolute;
+    top:24px;
+    left: -163px;
+}
 
 
 
@@ -483,6 +502,14 @@ display: flex;
 .testimonials {
     background-color: #672f1b;
     padding: 100px 0 150px 0;
+    position: relative;
+}
+
+.testimonials::after {
+    content: url(../assets/images/testimonials/dots.png);
+    position: absolute;
+    top: -80px;
+    right: 80px;
 }
 
 .testimonials__title {
@@ -516,6 +543,16 @@ display: flex;
     line-height: 1.94;
     letter-spacing: normal;
     max-width: 455px;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonials__blockquote::before {
+    content: url(../assets/images/testimonials/sarah_a.png);
+    position: absolute;
+    top: -98px;
+    left: -153px;
+    z-index: -1;
 }
 
 .testimonials__author {
@@ -527,6 +564,7 @@ display: flex;
 .testimonials__img {
     margin-left: 59px;
     margin-top: 118px;
+    z-index: 3;
 }
 
 .testimonials__controls {}
@@ -555,6 +593,7 @@ display: flex;
 }
 
 .blog__img {
+    z-index: 1;
 
 }
 
@@ -570,6 +609,15 @@ display: flex;
     text-align: left;
     color: #f2612d;
     margin-left: 61px;
+    position: relative;
+}
+
+.article__title::before {
+    content: url(../assets/images/blog/line.png);
+    position: absolute;
+    top: -57px;
+    left: -100px;
+    z-index: -1;
 }
 
 .article__time {
@@ -622,13 +670,30 @@ display: flex;
     display: flex;
 }
 
+
 .instagram__photo {
     flex-grow: 1;
+    position: relative;
+}
+
+.instagram__photo::after {
+    content: url(../assets/images/instagram/icon-white.png);
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    z-index: 1;
+    }
+
+.instagram__photo::before {
+    content: url(../assets/images/instagram/shadow.png);
+    position: absolute;
+    opacity: 0.4;
 }
 
 .instagram__img {
     width: 100%;
 }
+
 
 
 
