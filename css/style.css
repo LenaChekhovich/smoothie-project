@@ -865,7 +865,7 @@ display: flex;
     content: url(../assets/images/footer/envelope.png);
     position: absolute;
     top: -58px;
-    left: -43px;
+    left: 25px;
 }
 
 .subscription__wrap::after {
