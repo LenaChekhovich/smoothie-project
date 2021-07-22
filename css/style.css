@@ -279,45 +279,32 @@
     margin-top: 25px;
 }
 
-
 .about {
     background-color: #14826f;
-    /*display: flex;
+    display: flex;
     justify-content: center;
-    flex-wrap: wrap;*/
+    align-items: center;
     position: relative;
 }
 
 .about__img {
-    /*transform: rotate(1deg);*/
-    position: absolute;
-    left: 144px;
-    bottom: -79px;
+    transform: rotate(1deg);
 }
 
 .about__benefits {
     display: flex;
-    /*flex-direction: column;*/
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    justify-content: flex-end;
-    align-items: center;
     flex-direction: column;
-    margin-left: 463px;
+    justify-content: left;
+    align-items: left;
+    gap: 50px;
 }
 
 .about__title {
     font-size: 55px;
     line-height: 1.09;
     letter-spacing: -1.1px;
-    margin-top: 97px;
-    margin-bottom: 68px;
     max-width: 600px;
-    text-align: left;
     position: relative;
-    margin-left: 170px;
 }
 
 .about__title::before {
@@ -334,8 +321,7 @@
 .about__list {
     list-style-image: url(../assets/images/about/item.png);
     list-style-position: inside;
-    margin-bottom: 50px;
-    margin-left: 14px;
+    text-align: left;
 }
 
 .about__item {
@@ -360,7 +346,6 @@
     line-height: 1.05;
     width: 380px;
     height: 60px;
-    margin-bottom: 63px;
     text-align: left;
     background-image: url(../assets/images/header/arrow.png.png);
     background-repeat: no-repeat;
@@ -368,10 +353,6 @@
     background-position-x: 320px;
     background-position-y: 20px;
 }
-
-.btn {}
-
-.products {}
 
 .products__box {
 display: flex;
