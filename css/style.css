@@ -882,12 +882,6 @@ display: flex;
     gap: 25px;
 }
 
-.social__item {}
-
-.social__link {}
-
-.social__icon {}
-
 .footer__bottom {
     padding: 10px 0 10px 0;
     display: flex;
@@ -904,5 +898,4 @@ display: flex;
 }
 
 .footer__link {
-
 }
