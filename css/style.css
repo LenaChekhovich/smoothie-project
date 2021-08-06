@@ -49,8 +49,11 @@ body {
 }
 
 .header__top {
-    padding: 88px 100px 123px;
-    /*position: relative;*/
+    padding: 85px 100px 119px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 /*.header__burger-btn {
@@ -65,23 +68,15 @@ body {
     z-index: 999;
 }*/
 
-.header__navigation {
-    /*display: flex;
-    justify-content: space-between;
-    align-items: center;*/
-}
+.header__navigation {}
 
 .header__nav {}
 
 .nav {}
 
 .nav__list {
-    /*display: flex;
-    align-items: center;*/
-}
-
-.nav__item {
-    /*margin-right: 35px;*/
+    display: flex;
+    column-gap: 32px;
 }
 
 .nav__link {
@@ -89,16 +84,14 @@ body {
     font-size: 1.6rem;
     text-transform: uppercase;
     text-decoration: none;
-    line-height: 40px; /*2.5;*/
-    letter-spacing: 0.02em; /*0.32px;*/
+    line-height: 2.5;
+    letter-spacing: 0.02em;
 }
 
 .header__right-block {
-    /*width: 420px;
     display: flex;
-    justify-content: space-between;*/
-    /*column-gap: 100px;
-    align-items: center;*/
+    column-gap: 136px;
+    align-items: center;
 }
 
 .header__personal {}
@@ -106,11 +99,9 @@ body {
 .personal {}
 
 .personal__list {
-    /*column-gap: 45px;
     display: flex;
-    align-items: center;
-    margin-right: 93px;
-    position: relative;*/
+    column-gap: 47px;
+    /*position: relative;*/
 }
 
 /*.personal__list::after {
@@ -124,16 +115,12 @@ body {
 }*/
 
 .personal__item {
-    margin-right: 45px;
     /*position: relative;*/
-}
-
-.personal__item:last-child {
-    margin-right: 0px;
 }
 
 .personal__link {
     /*display: flex;*/
+    position: relative;
 }
 
 .personal__icon {
@@ -143,20 +130,19 @@ body {
 }
 
 .personal__cart-count {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 18px;
     height: 18px;
     background-color: #fff;
     color: #000;
     border-radius: 50%;
     letter-spacing: 0.2px;
-    /*display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
-    top: -12px;
+    top: -21px;
     left: 20px;
-    right: -14px;*/
+    right: -14px;
 }
 
 .header__socials {}
@@ -164,28 +150,19 @@ body {
 .socials {}
 
 .socials__list {
-    /*display: flex;
-    column-gap: 10px;*/
-}
-
-.socials__item {
-    margin-right: 10px;
-}
-
-.socials__item:last-child {
-    margin-right: 0;
-}
+    display: flex;
+    column-gap: 10px;
+    }
 
 .socials__link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 35px;
     min-width: 35px;
     max-width: 35px;
     background-color: #fff;
     border-radius: 50%;
-    /*display: flex;
-    align-items: center;
-    justify-content: center;*/
 }
 
 .socials__icon {
@@ -196,10 +173,10 @@ body {
 }
 
 .header__logo {
-    /*position: absolute;
-    top: 60px;
+    position: absolute;
+    top: 105px;
     left: 50%;
-    transform: translateX(-50%);*/
+    transform: translate(-50%, -50%);
 }
 
 .logo {}
@@ -207,12 +184,12 @@ body {
 .logo__link {}
 
 .logo__img {
-    /*width: 20rem;*/
+    width: 21rem;
 }
 
 .header__content {
-    /*display: flex;
-    justify-content: center;*/
+    display: flex;
+    justify-content: center;
 }
 
 .header__btn {
@@ -318,8 +295,12 @@ body {
 }
 
 .smoothies__wrapper {
-    width: 1010px;
-    height: 389px;
+    max-width: 1010px;
+    max-height: 389px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
     /*display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -331,6 +312,11 @@ body {
 }
 
 .smoothies__inner {
+    border-right: solid #f6edde;
+    border-bottom: solid #f6edde;
+    display: grid;
+    align-items: center;
+    justify-items: center;
     /*display: flex;
     justify-content: center;
     align-items: center;
@@ -341,10 +327,9 @@ body {
 }
 
 .smoothies__img {
-    /*object-fit: cover;
+    object-fit: cover;
     width: 100%;
-    max-width: 74px;
-    max-height: 70px;*/
+    max-width: 79px;
 }
 
 .smoothies__subtitle {
@@ -353,9 +338,13 @@ body {
     line-height: 1.6; /*40px*/
     letter-spacing: -0.5px;
     color: #f2612d;
-    /*text-align: center;
-    margin-top: 25px;*/
+    /*text-align: center;*/
+    /*margin-top: 25px;*/
 }
+
+
+
+
 
 .about {
     padding: 97px /*64px*/ 356px 94px 143px;
