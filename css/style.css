@@ -116,7 +116,7 @@ body {
 }
 
 .personal__item {
-    /*position: relative;*/
+    position: relative;
 }
 
 .personal__link {
