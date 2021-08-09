@@ -205,27 +205,25 @@ body {
 .btn {
     font-family: 'MuliExtraBold', sans-serif;
     font-size: 2.4rem;
-    line-height: 1.67; /*40px*/
-    letter-spacing: -0.02em; /*-0.48px;*/
+    line-height: 1.67;
+    letter-spacing: -0.02em;
     border-radius: 35px;
-    /*padding: 0 38px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*margin-top: 115px;*/
+    padding: 0 38px;
 }
 
 .btn--green {
     background-color: #0aa566;
-    /*position: relative;*/
+    position: relative;
 }
 
-/*.btn--green:hover {
+.btn--green:hover {
     background-color: #0b925c;
-    color: white;
-}*/
+}
 
-/*.btn--green::after {
+.btn--green::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -235,18 +233,18 @@ body {
     top: 50%;
     right: 38px;
     transform: translateY(-50%);
-}*/
+}
 
-/*.btn--green:hover::after {
+.btn--green:hover::after {
     right: 28px;
-}*/
+}
 
-/*.nav__item:hover,
+.nav__item:hover,
 .personal__item:hover,
-.social__item:hover {
-    transition: 1s;
-    transform: scale(1.5);
-}*/
+.socials__item:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+}
 
 .smoothies {
     padding: 98px 0px 112px 0px;
@@ -331,27 +329,32 @@ body {
 .smoothies__subtitle {
     font-family: 'MuliExtraBold', sans-serif;
     font-size: 2.5rem;
-    line-height: 1.6; /*40px*/
+    line-height: 1.6;
     letter-spacing: -0.5px;
     color: #f2612d;
+    transition: 0.5s;
+}
+
+.smoothies__subtitle:hover  {
+    transform: scale(1.2);
 }
 
 .about {
-    padding: 64px 0px 0px 0px;
+    height: 800px;
+    padding: 97px 0px 0px 0px;
     background-color: #14826f;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 100px;
-    /*position: relative;*/
     }
     
 .about__img {
     object-fit: cover;
-    /*width: 100%;*/
+    width: 100%;
     max-width: 691px;
-    /*transform: rotate(1deg);*/
+    transform: translate(-177px, -33px);
     }
+
 
     .about__benefits {
         display: flex;
@@ -362,16 +365,16 @@ body {
         max-width: 590px;
         font-family: 'MuliExtraBold', sans-serif;
         font-size: 5.5rem;
-        line-height: 1.09; /*60px*/
+        line-height: 1.09;
         letter-spacing: -1.1px;
-        margin-bottom: 68px;
+        margin-bottom: 50px;
         position: relative;
     }
 
     .about__title::before {
         content: url(../assets/images/about/line.png);
         position: absolute;
-        top: 84px;
+        top: 75px;
         left: 62px;
     }
     
@@ -388,7 +391,7 @@ body {
     
     .about__item {
         font-size: 2.1rem;
-        line-height: 1.05; /*22px*/
+        line-height: 1.05;
     }
     
     .about__item:not(:last-child) {
@@ -406,13 +409,25 @@ body {
         border: solid 2px #f8b231;
         font-family: 'MuliExtraBold', sans-serif;
         font-size: 2.1rem;
-        line-height: 1.05; /*22px*/
+        line-height: 1.05;
         text-align: left;
+        position: relative;
+    }
+
+    .about__btn::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        height: 16px;
+        width: 30px;
         background-image: url(../assets/images/header/arrow.png.png);
-        background-repeat: no-repeat;
-        background-position: right;
-        background-position-x: 320px;
-        background-position-y: 20px;
+        top: 50%;
+        right: 38px;
+        transform: translateY(-50%);
+    }
+    
+    .about__btn:hover::after {
+        right: 28px;
     }
 
     .products {
@@ -441,14 +456,14 @@ body {
             margin-top: 34px;
             font-family: 'MuliBold', sans-serif;
             font-size: 2.4rem;
-            line-height: 0.92; /*22px*/
+            line-height: 0.92;
         }
         
         .products__quantity {
             margin-bottom: 65px;
             font-family: 'MuliItalic', sans-serif;
             font-size: 2.1rem;
-            line-height: 1.52; /*32px*/
+            line-height: 1.52;
         }
         
         .products__btn {
@@ -458,15 +473,12 @@ body {
             border: solid 2px #fff;
             font-family: 'MuliExtraBold', sans-serif;
             font-size: 2.1rem;
-            line-height: 1.05; /*22px*/
-            /*height: 60px;
-            text-align: left;
-            padding: 17px 36px 18px;
+            line-height: 1.05;
             background-image: url(../assets/images/products/arrow.png);
             background-repeat: no-repeat;
             background-position: right;
             background-position-x: 142px;
-            background-position-y: 20px;*/ 
+            background-position-y: 20px;
         }
         
         .products__item--chocolate {
@@ -490,7 +502,6 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 118px;
             flex-wrap: wrap;
         }
         
@@ -499,6 +510,7 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            margin-right: 206px;
         }
         
         .story__title {
@@ -511,11 +523,7 @@ body {
             margin-bottom: 60px;
             max-width: 511px;
             font-size: 1.8rem;
-            line-height: 1.94; /*35px*/
-            /*margin-right: 206px;
-            max-width: 511px;
-            text-align: left;
-            */
+            line-height: 1.94;
         }
         
         .text {}
@@ -540,7 +548,14 @@ body {
         }
         
         .story__right-block {
-            /*position: relative;*/
+            position: relative;
+        }
+
+        .story__right-block::before {
+            content: url(../assets/images/story/stamp.png);
+            position: absolute;
+            top:24px;
+            left: -163px;
         }
         
         .story__img {
@@ -548,13 +563,6 @@ body {
             width: 100%;
             max-width: 585px;
         }
-        
-        /*.story__right-block::before {
-            content: url(../assets/images/story/stamp.png);
-            position: absolute;
-            top:24px;
-            left: -163px;
-        }*/
 
         .testimonials {
             padding: 117px 0px 217px 0px;
@@ -562,15 +570,15 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            /*position: relative;*/
+            position: relative;
         }
         
-        /*.testimonials::after {
+        .testimonials::after {
             content: url(../assets/images/testimonials/dots.png);
             position: absolute;
             top: -80px;
             right: 80px;
-        }*/
+        }
         
         .testimonials__title {
             margin-bottom: 118px;
