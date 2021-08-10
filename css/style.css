@@ -268,8 +268,8 @@ body {
 .title {
     font-family: 'MuliExtraBold', sans-serif;
     font-size: 5rem;
-    letter-spacing: -0.02em; /*-1px;*/
-    line-height: 0.8; /*40px;*/
+    letter-spacing: -0.02em;
+    line-height: 0.8;
     }
     
 .title--orange {
@@ -277,7 +277,7 @@ body {
     }
 
 .smoothies__text {
-    line-height: 1.94; /*35px*/
+    line-height: 1.94;
     max-width: 915px;
     text-align: center;
     margin-bottom: 61px;
@@ -448,8 +448,8 @@ body {
         
         .products__img {
             /*object-fit: cover;
-            /*width: 100%;*/
-            /*max-width: 119px;*/
+            width: 100%;
+            max-width: 119px;*/
         }
         
         .products__title {
@@ -538,7 +538,7 @@ body {
             border-radius: 30px;
             font-family: 'MuliExtraBold', sans-serif;
             font-size: 2.1rem;
-            line-height: 1.05; /*22px*/
+            line-height: 1.05;
             /*text-align: left;
             background-image: url(../assets/images/header/arrow.png.png);
             background-repeat: no-repeat;
@@ -608,18 +608,18 @@ body {
         
         .testimonials__blockquote {
             font-size: 1.8rem;
-            line-height: 1.94; /*35px;*/
-            /*position: relative;
-            z-index: 1;*/
+            line-height: 1.94;
+            position: relative;
+            z-index: 1;
         }
         
-        /*.testimonials__blockquote::before {
+        .testimonials__blockquote::before {
             content: url(../assets/images/testimonials/sarah_a.png);
             position: absolute;
             top: -98px;
             left: -153px;
             z-index: -1;
-            }*/
+            }
         
         
         .testimonials__author {
@@ -633,7 +633,7 @@ body {
             object-fit: cover;
             width: 100%;
             max-width: 220px;
-            /*z-index: 3;*/
+            z-index: 3;
         }
         
         .testimonials__controls {
@@ -680,18 +680,16 @@ body {
             letter-spacing: -0.6px;
             color: #f2612d;
             margin-left: 61px;
-            /*text-align: left;
-            
-            position: relative;*/
+            position: relative;
         }
         
-        /*.article__title::before {
+        .article__title::before {
             content: url(../assets/images/blog/line.png);
             position: absolute;
-            top: -57px;
+            top: -46px;
             left: -100px;
             z-index: -1;
-        }*/
+        }
         
         .article__time {
             font-size: 1.6rem;
@@ -736,32 +734,32 @@ body {
         }
         
         .instagram__link {
-            /*position: relative;*/
+            position: relative;
         }
         
-        /*.instagram__link::before {
+        .instagram__link::before {
             content: url(../assets/images/instagram/icon-green.png);
             position: absolute;
             left: -37px;
             bottom: -9px;
-        }*/
+        }
         
         .instagram__wrapper {
             display: flex;
         }
         
         .instagram__photo {
-            /*flex-grow: 1;
-            position: relative;*/
+            position: relative;
+            /*flex-grow: 1;*/
         }
         
-        /*.instagram__photo::after {
+        .instagram__photo::after {
             content: url(../assets/images/instagram/icon-white.png);
             position: absolute;
             bottom: 20px;
             right: 25px;
             z-index: 1;
-        }*/
+        }
         
         /*.instagram__photo::before {
             content:url(../assets/images/instagram/shadow.png);
