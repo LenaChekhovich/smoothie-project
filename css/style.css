@@ -637,15 +637,23 @@ body {
         }
         
         .testimonials__controls {
-            /*display: flex;
-            column-gap: 98px;*/
+            display: flex;
+            justify-content: center;
+            gap: 25px;
         }
         
-        .testimonials__btn {}
+        .testimonials__btn {
+            width: 30px;
+            height: 16px;
+            background-image: url(../assets/images/testimonials/arrow.png);
+            background-repeat: no-repeat;
+        }
 
         .btn {}
         
-        .btn--right {}
+        .btn--right {
+            transform: rotate(180deg);
+        }
 
 
         .blog {
