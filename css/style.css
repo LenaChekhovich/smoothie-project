@@ -565,7 +565,7 @@ body {
         }
 
         .testimonials {
-            padding: 117px 0px 217px 0px;
+            padding: 117px 0px 64px 0px;
             background-color: #672f1b;
             display: flex;
             flex-direction: column;
@@ -637,6 +637,7 @@ body {
         }
         
         .testimonials__controls {
+            margin-top: 144px;
             display: flex;
             justify-content: center;
             gap: 25px;
@@ -758,7 +759,7 @@ body {
         
         .instagram__photo {
             position: relative;
-            /*flex-grow: 1;*/
+            flex-grow: 1;
         }
         
         .instagram__photo::after {
@@ -769,11 +770,11 @@ body {
             z-index: 1;
         }
         
-        /*.instagram__photo::before {
+        .instagram__photo::before {
             content:url(../assets/images/instagram/shadow.png);
             position: absolute;
             opacity: 0.4;
-        }*/
+        }
         
         
         .instagram__img {
@@ -811,7 +812,7 @@ body {
         .footer__info {
             display: flex;
             flex-direction: column;
-            /*flex-basis: 14%;*/
+            flex-basis: 14%;
         }
         
         .info {
@@ -828,7 +829,7 @@ body {
             font-family: 'MuliBold', sans-serif;
             font-size: 1.8rem;
             line-height: 1.94;
-            letter-spacing: -0.02em; /*-0.36px;*/
+            letter-spacing: -0.02em;
             color: #6d450c;
         }
         
@@ -862,8 +863,8 @@ body {
         .footer__subscription {
             display: flex;
             flex-direction: column;
-            /*flex-basis: 28%;
-            position: relative;*/
+            flex-basis: 28%;
+            /*position: relative;*/
         }
         
         .subscription {
