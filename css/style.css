@@ -539,12 +539,12 @@ body {
             font-family: 'MuliExtraBold', sans-serif;
             font-size: 2.1rem;
             line-height: 1.05;
-            /*text-align: left;
+            text-align: left;
             background-image: url(../assets/images/header/arrow.png.png);
             background-repeat: no-repeat;
             background-position: right;
             background-position-x: 234px;
-            background-position-y: 23px;*/
+            background-position-y: 23px;
         }
         
         .story__right-block {
@@ -798,8 +798,8 @@ body {
         .footer__logo {
             display: flex;
             align-items: center;
-            /* justify-content: center;
-            flex-basis: 29%;*/
+            flex-basis: 29%;
+            /* justify-content: center;*/
         }
         
         .logo {
@@ -967,7 +967,7 @@ body {
         .footer__link {
         }
 
-/*
+
 @media screen and (max-width: 768px) {
     html,
     body {
@@ -1004,4 +1004,4 @@ body {
         margin-bottom: 30px;
     }
 
-}*/
+}
