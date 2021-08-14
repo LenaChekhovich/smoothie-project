@@ -725,8 +725,8 @@ body {
         .article__link::after {
             content: url(../assets/images/blog/arrow.png);
             position: absolute;
-            top: -4px;
-            left: 99px;
+            top: -5px;
+            left: 100px;
         }
 
 
