@@ -719,6 +719,14 @@ body {
             
             .article__link {
             font-family: 'MuliBoldItalic', sans-serif;
+            position: relative;
+        }
+
+        .article__link::after {
+            content: url(../assets/images/blog/arrow.png);
+            position: absolute;
+            top: -4px;
+            left: 99px;
         }
 
 
