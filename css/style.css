@@ -56,18 +56,6 @@ body {
     position: relative;
 }
 
-/*.header__burger-btn {
-    background-image: url(../assets/images/header/sort-button-with-three-lines.svg);
-    background-size: cover;
-    width: 30px;
-    height: 30px;
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    display: none;
-    z-index: 999;
-}*/
-
 .header__navigation {}
 
 .header__nav {}
@@ -330,7 +318,7 @@ body {
     font-family: 'MuliExtraBold', sans-serif;
     font-size: 2.5rem;
     line-height: 1.6;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.02em;
     color: #f2612d;
     transition: 0.5s;
 }
@@ -340,34 +328,37 @@ body {
 }
 
 .about {
-    height: 800px;
-    padding: 97px 0px 0px 0px;
-    background-color: #14826f;
+    padding-top: 97px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    background-color: #14826f;
+    }
+
+    .about__wrapper {
+        display: flex;
+        justify-content: flex-start;
     }
     
 .about__img {
+    margin-left: 145px;
     object-fit: cover;
     width: 100%;
     max-width: 691px;
-    transform: translate(-177px, -33px);
+    transform: translateY(80px);
     }
 
 
     .about__benefits {
         display: flex;
         flex-direction: column;
+        margin-left: 140px;
     }
     
     .about__title {
-        max-width: 590px;
+        /*max-width: 590px;*/
         font-family: 'MuliExtraBold', sans-serif;
         font-size: 5.5rem;
         line-height: 1.09;
-        letter-spacing: -1.1px;
-        margin-bottom: 50px;
+        /*margin-bottom: 50px;*/
         position: relative;
     }
 
@@ -983,7 +974,7 @@ body {
         }
 
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     html,
     body {
         font-size: 8px;
@@ -1019,4 +1010,4 @@ body {
         margin-bottom: 30px;
     }
 
-}
+}*/
